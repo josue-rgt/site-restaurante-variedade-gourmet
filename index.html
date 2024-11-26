@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Variedade Gourmet</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="d-flex flex-column whapper">
+        <nav class="bg-light sticky-top" id="cabecalho">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-2">
+                    <a class="navbar-brand fs-4 fw-bold" href="#"><img src="icon/restaurante.png" alt="Retaurante" width="45px" class="me-2"></i>Restaurante Variedade Gourmet</a>
+
+                    <ul class="nav nav-underline fs-5">
+                        <li class="nav-item"><a href="#paginaInicial" class="nav-link" aria-current="page">Ínicio</a></li>
+                        <li class="nav-item"><a href="#sobreNos" class="nav-link">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                        <li class="nav-item"><a href="#faleConosco" class="nav-link">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-targer="cabecalho" data-bs-smooth-scroll="true">
+            <header  id="paginaInicial">
+                <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" ></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" class="active"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="image/carousel/01.jpg" class="d-block w-100" alt="Taças De Bebida">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="image/carousel/02.jpg" class="d-block w-100" alt="Taças De Bebida">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="image/carousel/03.jpg" class="d-block w-100" alt="Taças De Bebida">
+                        </div>
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carouselMain" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carouselMain" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </header>
+            <section class="mt-3" id="sobreNos">
+                <div class="container">
+                    <div class="row featurette sobre">
+                        <div class="col-md-5">
+                            <img src="image/restaurant.jpg" alt="Restaurante">
+                        </div>
+                        <div class="col-md-7 py-5">
+                          <h2 class="fw-bold">Sobre Nós</h2>
+                          <p class="lead ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatum dolorum fugiat necessitatibus, minima repudiandae, ut inventore eaque exercitationem itaque distinctio corporis beatae soluta nostrum hic laboriosam voluptatem, dolorem quae!
+                          Adipisci perferendis doloribus asperiores odit iusto molestiae reprehenderit rem voluptatum quidem obcaecati, laborum, voluptatem quia? Odio modi nostrum numquam hic iste. Id quisquam optio earum maiores itaque. Sit, consectetur! Est.</p>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <main class="flex-fill" id="cardapio">
+                <div class="container">
+                    <hr class="solid">
+                    <nav class="nav nav-pills nav-justified  menu mx-auto">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#pratosPrincipais" class="nav-link fw-bold active">PRATOS PRINCIPAIS</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav-link fw-bold">SOBREMESAS</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidasNaoAlcoolicas" class="nav-link fw-bold">BEBIDAS NÃO ALCOÓLICAS</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidasAlcoolicas" class="nav-link fw-bold">BEBIDAS ALCOÓLICAS</button>
+                    </nav>
+                    <hr class="solid">
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="pratosPrincipais">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/camarao scampi.jpg" class="mx-auto" alt="Camarão Scampi">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Camarão Scampi</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/kabobs.jpg" class="mx-auto" alt="Kabobs">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Kabobs</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/ramen.jpg" class="mx-auto" alt="Ramen">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Ramen</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/salmao assado.jpg" class="mx-auto" alt="Salmão Assado">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Salmão Assado</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/tacos.jpg" class="mx-auto" alt="Tacos">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Tacos</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/pratos/ratatouille.jpg" class="mx-auto" alt="Ratatouille">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Ratatouille</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 49,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card">
+                                        <button type="button" class="btn btn-primary bg-dark">
+                                            <p class="text-white fw-bold fs-4 my-auto p-1">Ver Mais</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="sobremesas">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/sobremesas/bolo de chocolate.jpg" class="mx-auto" alt="Bolo De Chocolate">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Bolo De Chocolate</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 19,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/sobremesas/panquecas.jpg" class="mx-auto" alt="Panquecas">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Panquecas</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 19,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/sobremesas/torta de ruibarbo.jpg" class="mx-auto" alt="Torta De Ruibarbo">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Torta De Ruibarbo</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 19,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card">
+                                        <button type="button" class="btn btn-primary bg-dark">
+                                            <p class="text-white fw-bold fs-4 my-auto p-1">Ver Mais</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="bebidasNaoAlcoolicas">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/bebidas/suco de abacaxi.jpg" class="mx-auto" alt="Suco De Abacaxi">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Suco De Abacaxi</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 9,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/bebidas/suco de laranja.jpg" class="mx-auto" alt="Suco De Laranja">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Suco De Laranja</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 9,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                <div class="col">
+                                    <div class="card">
+                                        <button type="button" class="btn btn-primary bg-dark">
+                                            <p class="text-white fw-bold fs-4 my-auto p-1">Ver Mais</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="bebidasAlcoolicas">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/caipirinha de morango.jpg" class="mx-auto" alt="Bebida Caipirinha De Morango">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Caipirinha De Morango</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/pina colada.jpg" class="mx-auto" alt="Bebida Pinã Colada">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Pinã Colada</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/negroni.jpg" class="mx-auto" alt="Bebida Negroni">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Negroni</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/whiskey sour.jpg" class="mx-auto" alt="Bebida Whiskey Sour">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Whiskey Sour</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/cosmopolitan.jpg" class="mx-auto" alt="Bebida Cosmopolitan">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Cosmopolitan</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card text-center h-100">
+                                        <img src="image/alcool/mojito tradicional.jpg" class="mx-auto" alt="Bebida Mojito Tradicional">
+                                        <div class="card-body bg-dark text-white pt-2 ">
+                                            <h4 class="fw-bold text-center mb-2">Mojito Tradicional</h4>
+                                            Lorem, ipsum dolor consectetur adipisicing elit. Modi debitis deserunt natus nesciunt excepturi ad, quod sutk
+                                        </div>
+                                        <div class="card-footer bg-dark text-white d-flex justify-content-between px-3 py-0">
+                                            <p class="fs-5 fw-bold my-auto">R$ 29,90</p>
+                                            <i class="bi bi-cart-plus fs-2 text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card">
+                                        <button type="button" class="btn btn-primary bg-dark">
+                                            <p class="text-white fw-bold fs-4 my-auto p-1">Ver Mais</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer class="container" id="faleConosco">
+                <hr class="solid mt-3">
+                <div class="row row-cols-lg-3 mb-3">
+            
+                    <div class="col">
+                        <section class="p-4 pb-0 text-center mb-4">
+                            <a class="btn btn-outline-dark btn-floating m-1" href="https://linkedin.com/" target="blank" role="button"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/" target="blank" role="button"><i class="bi bi-github"></i></a>
+                            <a class="btn btn-outline-dark btn-floating m-1" href="https://x.com/" target="blank" role="button"><i class="bi bi-twitter-x"></i></a>
+                            <a class="btn btn-outline-dark btn-floating m-1" href="https://facebook.com/" target="_blank" role="button"><i class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-dark btn-floating m-1" href="https://instagram.com/" target="blank" role="button"><i class="bi bi-instagram"></i></a>
+                        </section>
+                    </div>
+            
+                    <div class="col">
+                        <div class="text-center">
+                            <i class="bi bi-person-circle fs-1"></i>
+                            <h2 class="fw-bold mb-2">Cadastre-se</h2>
+                        </div>
+                        <form>
+                            <div class="mb-2">
+                                <label class="form-label fw-bold" for="name" >Nome:</label>
+                                <input class="form-control" type="text" id="name" placeholder="Digite seu nome completo" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label fw-bold" for="mail" >E-Mail:</label>
+                                <input class="form-control" type="email" id="mail" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="phone">Telefone:</label>
+                                <input class="form-control" type="tel" id="phone" placeholder="Digite seu telefone " required>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <label class="form-check-label" for="check">Li e concordo com todos os termos do site</label>
+                                <input class="form-check-input" type="checkbox" id="check" required>
+                            </div>
+                            <div>
+                                <button class="btn btn-success fw-bold" type="submit">Enviar Dados</button>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <div class="col">
+                        <div>
+                            <ul class="nav nav-underline mx-5 justify-content-between p-4 fs-5">
+                                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Ínicio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Cardápio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="text-center p-3 bg-black">
+                <p class="text-light">&copy; 2024 - TODOS OS DIREITOS RESERVADOS - RESTAURANTE VARIEDADE GOURMET - JOSUÉ ROGÉRIO GABRIEL TEODORO</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

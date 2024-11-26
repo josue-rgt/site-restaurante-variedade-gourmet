@@ -1,0 +1,116 @@
+.card img {
+    width: 100%;
+    height: 203px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.ta-content button {
+    width: 100%;
+    height: 20%;
+}
+
+.tab-content button:hover {
+    transform: scale(1.02);
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.bi-cart-plus:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.menu {
+    width: 80%;
+}
+
+.menu button {
+    width: 250px;
+    }
+
+.carousel-inner img{
+    height: 660px;
+}
+
+.sobre img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.sobre p{
+    text-align: justify;
+}
+
+.carousel-caption {
+    margin-bottom: 35%;
+}
+
+@media screen and (max-width: 767px) {
+    #cabecalho .d-flex {
+        flex-direction: column;
+    }
+    
+    #sobreNos .sobre img {
+        width: 100%;
+    }
+
+    #sobreNos .sobre .col-md-7 {
+        text-align: center;
+    }
+
+    #cardapio .container {
+        flex-direction: column;
+    }
+
+    #cardapio nav {
+        display: block;
+    }
+
+    #cardapio nav button {
+        margin: auto;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #sobreNos .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobreNos .sobre .col-md-5 {
+        width: 70%;
+    }
+
+    #sobreNos .sobre img {
+        width: 100%;
+    }
+
+    #sobreNos .sobre .col-md-7 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+ 
+@media screen and (min-width: 1024px) {
+    #sobreNos .sobre img {
+        width: 100%;
+        margin-top: 80px;
+    }  
+} 
